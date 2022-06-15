@@ -1,0 +1,9 @@
+<form class="form-group" #loginForm="ngForm" (ngSubmit)="save(loginForm)" >
+    <h3>Login</h3>
+    <div><input type="text" name="email" ngModel required placeholder="Username"></div>
+    <div><input type="text" name="password" ngModel required placeholder="Password"></div>
+    <div><input type="checkbox" ngModel required >Remember Me</div>
+    <a href="/forgot-password" class="forgot">Forgot Password?</a>
+    <div class="login" ><input type="submit" name="login"  value="Log In" ></div>
+    <div class="signup" ><button (click)="onClick()">Sign Up</button></div>
+</form>

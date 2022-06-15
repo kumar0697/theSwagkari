@@ -1,0 +1,24 @@
+<form #signUp="ngForm" class="form-group" (ngSubmit)="save(signUp)">
+    <h3>Sign Up</h3>
+    <div>
+        <input ngModel required type="text" name="name" placeholder="Enter Name">
+    </div>
+   
+    <div>
+        <input ngModel required type="email" name="email" placeholder="Enter Email Address">
+    </div>
+   
+    <div>
+        <input ngModel required type="number" name="phone-number" placeholder="Enter Phone Number">
+    </div>
+   
+    <div>
+        <input ngModel required type="password" name="password" placeholder="Enter Password">
+    </div>
+    
+    <div>
+        <input ngModel required type="password" name="confirm" placeholder=" Re-enter Password">
+    </div>
+   
+    <input type="submit" name="submit" value="Register">
+</form>

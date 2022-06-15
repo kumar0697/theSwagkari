@@ -1,0 +1,13 @@
+<div>
+    <button (click)="add()">Add Services</button>
+    <ul>
+        <li>
+            {{ showLeads | json }}
+        </li>
+
+        <!-- <li *ngFor="let lead of leads">
+            {{leads | json}}
+        </li> -->
+    </ul>
+    <button (click)="link()">Apply</button>
+</div>
