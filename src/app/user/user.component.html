@@ -1,0 +1,49 @@
+<div class="body">
+
+    <div class="grid-container">
+
+        <div class="form" >
+            <h3>User Form.</h3>
+            <form [formGroup]="user" (ngSubmit)="save()">
+                <div>
+                    <input type="text" formControlName="fname" name="fname" id="fname" placeholder="First Name" ><br>
+                    <span *ngIf="fname?.pristine && fname?.touched"> `Input field must filled`.</span>
+                </div>
+    
+                <div>
+                    <input type="text" formControlName="lname" name="lname" placeholder="Last Name"><br>
+                    <span *ngIf="lname?.pristine && lname?.touched"> `Input field must filled`.</span>
+                </div>
+                <div>
+                    <input type="text" formControlName="contact" name="contact" placeholder="Contact No."><br>
+                    <span *ngIf="contact?.touched && contact?.invalid"> `Input field must filled`.</span>
+                </div>
+                <div>
+                    <input type="email" formControlName="email" name="email" placeholder="Email Address"><br>
+                    <span *ngIf="email?.dirty && email?.invalid"> `Email field must filled with valid email`.</span>
+                </div>
+                <div>
+                    <input type="password" formControlName="password" name="password" placeholder="Password"><br>
+                    <span *ngIf="password?.dirty && password?.invalid"> `Password should min. have 8 characters`.</span>
+                </div>
+                <div class="form-button">
+                    <button class="button" type="submit" [disabled]=" user.invalid">Let's Login Now</button>
+                </div>
+    
+            </form>
+        </div>
+    
+    
+        <div class="list" >
+            <h3>User Lists</h3>
+            <ul *ngFor=" let user of users">
+                <li class="list-user" > 
+                    <span>{{ user | json }} </span> 
+                </li>
+            </ul>
+    
+        </div>
+    
+    
+    </div>
+</div>

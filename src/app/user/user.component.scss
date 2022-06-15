@@ -1,0 +1,75 @@
+ .body{
+  background-color: green;
+  height: 100vh;
+  background: linear-gradient(to right,rgb(150, 230, 150),white);
+
+}
+
+.grid-container {
+  padding: 70px 60px;
+  display: grid;
+  grid-template-columns: 48vw 48vw;
+  column-gap: 15px;
+}
+
+h3{
+ font-weight: bolder;
+}
+
+.form-button {
+  text-align: center;
+  button{
+    margin: 10px;
+    font-size: 15px;
+    color:white;
+    background-color: rgb(30, 148, 30);
+    border-radius: 5px;
+    padding: 10px 24px ;
+    font-weight: bold;
+  }
+  button:disabled{
+    background-color:#48c0ba ;
+    color:rgb(13, 82, 13);
+  }
+}
+.list{
+  padding: 20px;
+  
+  background-color: rgb(107, 177, 107);
+  box-shadow: 6px 10px 10px 2px rgba(0,0,0,0.4) ;
+
+  .list-user {
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: white;
+    width: 90%;
+  }
+
+}
+
+.form {
+  padding: 10px;
+  padding-inline-start: 20px;
+  background-color: #59d1cb;
+  box-shadow: 6px 10px 10px 2px rgba(0,0,0,0.4) ;
+}
+
+input[type=text],
+[type=email],
+[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+ul li{
+  padding: 10px;
+  border: 2px;
+  border-radius: 5px;
+  font-size: large;
+}
